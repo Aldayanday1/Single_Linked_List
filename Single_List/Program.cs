@@ -182,8 +182,8 @@
                                 previous = current = null;
                                 Console.Write("\nEnter the roll number of the " + "student whose record is to be searched: ");
                                 int num = Convert.ToInt32(Console.ReadLine());
-                                if (obj.Search(num, ref previous, ref current) == false) ;
-                                Console.WriteLine("\nRecord found.");
+                                if (obj.Search(num, ref previous, ref current) == false) 
+                                Console.WriteLine("\nRecord not found.");
                                 else
                                 {
                                     Console.WriteLine("\nRecord found");
@@ -195,7 +195,16 @@
                             {
                                 return;
                             }
+                        default:
+                            {
+                                Console.WriteLine("\nInvalid Option");
+                                break;
+                            }
                     }
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("\nCheck for the value entered ");
                 }
             }
         }
