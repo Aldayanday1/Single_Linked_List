@@ -82,6 +82,12 @@
                 Console.WriteLine();
             }
         }
+        public bool delNode(int nim)
+        {
+            Node previous, current;
+            previous = current = null;
+
+        }
 
     }
 }
