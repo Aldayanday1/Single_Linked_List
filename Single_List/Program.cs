@@ -165,6 +165,12 @@
                                         + nim + " Deleted");
                             }
                             break;
+
+                        case '3':
+                            {
+                                obj.traverse();
+                            }
+                            break;
                     }
                 }
             }
