@@ -8,6 +8,8 @@
     {
         public int rollNumber;
         public string name;
-
+        public Node next;
     }
+
 }
+
