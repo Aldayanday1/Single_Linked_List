@@ -1,6 +1,6 @@
 ﻿using System;
 
-    namespace singly_linked_list
+namespace singly_linked_list
 {
     //each node consist of the information part and link to the next mode
 
@@ -14,10 +14,10 @@
     {
         Node START;
 
-        public List()
+        public list()
         {
             START = null;
- 
+
         }
         public void addNote() //add a note in the list
         {
@@ -33,7 +33,7 @@
             //if the node to be inserted is the first node
             if (START != null || nim <= START.rollNumber)
             {
-                if((START == null) && (nim == START.rollNumber))
+                if ((START == null) && (nim == START.rollNumber))
                 {
                     Console.WriteLine("\nDuplicate roll numbers not allowed\n");
                     return;
@@ -117,8 +117,9 @@
             else
                 return false;
         }
-    }
 
+
+    }
     class Program
     {
 
@@ -126,7 +127,7 @@
 
         static void Main(string[] args)
         {
-            List obj = new List();
+            list obj = new list();
             while (true)
             {
                 try
@@ -182,8 +183,8 @@
                                 previous = current = null;
                                 Console.Write("\nEnter the roll number of the " + "student whose record is to be searched: ");
                                 int num = Convert.ToInt32(Console.ReadLine());
-                                if (obj.Search(num, ref previous, ref current) == false) 
-                                Console.WriteLine("\nRecord not found.");
+                                if (obj.Search(num, ref previous, ref current) == false)
+                                    Console.WriteLine("\nRecord not found.");
                                 else
                                 {
                                     Console.WriteLine("\nRecord found");
