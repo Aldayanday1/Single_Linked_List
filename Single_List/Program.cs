@@ -10,6 +10,15 @@
         public string name;
         public Node next;
     }
+    class list
+    {
+        Node START;
 
+        public List()
+        {
+            START = null;
+ 
+        }
+    }
 }
 
