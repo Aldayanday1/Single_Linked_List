@@ -93,7 +93,11 @@
             if (current == START)
                 START = START.next;
             return true;
-
+        }
+        public bool Search(int nim, ref Node previous, ref Node current)
+        {
+            previous = START;
+            current = START;
         }
 
     }
